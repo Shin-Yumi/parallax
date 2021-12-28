@@ -34,7 +34,7 @@
 
         
         .parallax {
-            background: #222;
+            background: #AC907B;
             color: #fff;
             font-family: 'NEXONLv1Gothic';
             font-weight: 400;
@@ -147,7 +147,7 @@
             height: 120%;
             background-repeat: no-repeat;
             background-size: cover;
-            filter: saturate(0%);
+            filter: saturate(30%);
         }
         .content__item__desc {
             font-size: 4vw;
@@ -193,12 +193,15 @@
         /* nav */
         .paraNav {
             position: fixed;
-            right: 20px; top: 20px;
+            right: 20px; top: -200px;
             z-index: 1000;
-            background: rgba(0,0,0,.4);
+            background: rgba(255,255,255,.4);
             padding: 15px 20px;
             border-radius: 50px;
             transition: top 0.4s ease;
+        }
+        .paraNav.show {
+            top: 20px;
         }
         .paraNav li {
             display: inline-block;
@@ -208,8 +211,7 @@
             color: #fff;
             text-decoration: none;
             display: inline-block;
-            padding: 5px;
-            width: 30px;
+            padding: 5px 20px;
             height: 30px;
             text-align: center;
             line-height: 30px;
@@ -217,7 +219,7 @@
         }
         .paraNav li.active a {
             background: #fff;
-            color: #000;
+            color: #ccc;
         }
     
         /* info */
